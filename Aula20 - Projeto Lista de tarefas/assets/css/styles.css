@@ -9,6 +9,14 @@
 	outline: 0;
 }
 
+ul {
+	list-style-type: square;
+}
+
+li {
+	margin: 0.75em auto;
+}
+
 body {
 	margin: 0;
 	padding: 0;
