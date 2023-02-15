@@ -40,3 +40,10 @@ function limparTarefa(elem) {
 	botaoApagar.innerText = 'Apagar';
 	elem.appendChild(botaoApagar);
 }
+
+document.addEventListener('click', (e) => {
+	const element = e.target;
+	if (element.classList.contains('apagar')) {
+		element.parentElement.remove();
+	}
+});
