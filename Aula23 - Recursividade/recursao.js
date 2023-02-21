@@ -5,4 +5,9 @@ function recursiva(valor) {
 	recursiva(valor);
 }
 
-recursiva(1);
+function fatorial(valor) {
+	if (valor === 1) return 1;
+	return valor * fatorial(valor - 1);
+}
+
+console.log(fatorial(5));
