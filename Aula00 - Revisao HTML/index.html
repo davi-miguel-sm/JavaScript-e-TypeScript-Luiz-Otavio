@@ -11,11 +11,50 @@
 			body {
 				font-family: sans-serif;
 			}
+			label {
+				display: block;
+			}
+			input {
+				margin: 1em;
+			}
 		</style>
 	</head>
 	<body>
 		<form action="#" method="post" target="_blank" autocomplete="off">
 			<p>O Formulário</p>
+			<p>
+				<label for="nome">Nome</label>
+				<input
+					type="text"
+					value="Jime Hendrix"
+					name="nome"
+					id="nome"
+					placeholder="Digite seu nome..." />
+			</p>
+			<p>
+				<label for="dev">Sou um Dev</label>
+				<input type="checkbox" name="ehDev" id="dev"
+			</p>
+			<p>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Digite seu email..." />
+			</p>
+			<p>
+				<label for="data">Data</label>
+				<input type="date" name="data" id="data" placeholder="Digite a data..." />
+			</p>
+			<p>
+				<label for="arquivo">Envie o arquivo</label>
+				<input type="file" name="arquivo" id="arquivo" />
+			</p>
+			<p>
+				<label for="senha">Senha</label>
+				<input type="password" name="senha" id="senha" placeholder="Digite a senha..." />
+			</p>
+			<p>
+				<button type="submit">Enviar</button>
+				<button type="reset">resetar</button>
+			</p>
 		</form>
 	</body>
 </html>
