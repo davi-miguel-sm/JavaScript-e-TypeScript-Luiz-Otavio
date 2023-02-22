@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+/* p,
+h1 {
+	color: blue;
+} */
+
+body div section p,
+body div section h1 {
+	color: red;
+}
+
+.main-content h1.heading {
+	color: purple;
+}
+
+/* Adjacent Sibling Selector */
+.pai p + h1 {
+	color: purple;
+}
+
+/* General Sibling Selector */
+.pai h1 ~ p {
+	color: crimson;
+}
+
+/* ^ => Começa com aquele trecho de texto como atributo */
+/* ~ => Tenha aquele trecho de texto em algum atributo */
+/* $ => Termina com aquele trecho de texto em algum atributo */
+/* 8 => Contem aquele trecho de texto como atributo */
+h1.heading ~ p[meu-atributo^='valor0'] {
+	color: forestgreen;
+}
+h1.heading ~ p[meu-atributo~='valor1'] {
+	color: darkblue;
+}
+h1.heading ~ p[meu-atributo$='valor2'] {
+	color: blueviolet;
+}
