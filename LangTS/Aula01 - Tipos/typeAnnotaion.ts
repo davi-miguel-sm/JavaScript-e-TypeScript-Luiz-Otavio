@@ -21,3 +21,11 @@ let pessoa: { nome: string; idade: number; adulto?: boolean } = {
 };
 
 console.log(pessoa.adulto);
+
+function soma(x: number, y: number) {
+  return x + y;
+}
+
+const soma2: (x: number, y: number) => number = (x, y) => x + y;
+const resultado = soma2(10, 10);
+console.log(resultado);
