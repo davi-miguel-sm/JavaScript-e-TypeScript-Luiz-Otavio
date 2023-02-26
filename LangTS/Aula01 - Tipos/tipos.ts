@@ -12,3 +12,22 @@ console.log(
     qualquerCoisa: 'Qualquer coisa pode ir no Any',
   }),
 );
+
+//tipo void
+function semRetorno(...args: string[]): void {
+  console.log(args.join(' '));
+}
+
+semRetorno('1', '2', '3', '4');
+
+const pessoa = {
+  nome: 'Davi',
+  sobrenome: 'Miguel',
+  exibirNome(): void {
+    console.log(this.nome + ' ' + this.sobrenome);
+  },
+};
+
+pessoa.exibirNome();
+
+export { pessoa };
