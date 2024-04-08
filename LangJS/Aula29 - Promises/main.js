@@ -20,10 +20,12 @@ esperaAi('1', rand(1, 4), function () {
 });
  */
 
-/* Modo de Resolução com Promises
-esperaAi('1', rand(1, 3)).then((resposta) => {
-  console.log(resposta);
-  return esperaAi('2', rand(1, 3));
-}).then((resposta) => {
-  console.log(resposta)
-}) */
+// Modo de Resolução com Promises
+esperaAi('1', rand(1, 3))
+  .then((resposta) => {
+    console.log(resposta);
+    return esperaAi('2', rand(1, 3));
+  })
+  .then((resposta) => {
+    console.log(resposta);
+  });
